@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic JavaScript Dump</title>
+  <style>
+    .some-styles {
+      color: tomato;
+    }
+  </style>
+</head>
+  <body>
+
+    <!-- We created an empty HTML div. Note that there is no content inside. -->
+    <div id="empty-div"></div>
+   
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+    <script>
+      const target = document.getElementById('empty-div') // the empty parent div
+
+      // const heading = document.createElement('h1')
+      // heading.innerHTML = 'Some heading';
+      // target.appendChild(heading);
+
+      $('#empty-div').append( "<h1>Some Heading</h1>" )
+      $('h1').css("color", "tomato"); //say what your going to grab with $ and then append what you want
+
+      // heading.classList.add('some-styles'); 
+
+      // const newDiv = document.createElement('div'); //creating the div
+      // newDiv.innerHTML = 'some more stuff'; // adding content to div
+      // target.appendChild(newDiv); //appending the div to target div
+
+      $('#empty-div').append('<p>some more stuff</p>');
+    </script>
+  </body>
+</html>
